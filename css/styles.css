@@ -66,6 +66,8 @@ header .toolbar .toggle{
     display: none;
     background-color: azure;
     opacity: 0;
+    position: fixed;
+    top: 3.5%;
 }
 
 

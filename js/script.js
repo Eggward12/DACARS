@@ -8,6 +8,8 @@ togglemenu.addEventListener('click',()=>{
 const grandel = document.querySelector(".grande");
 const puntol = document.querySelectorAll(".punto");
 
+puntol[0].classList.add("activo");
+
 puntol.forEach((cadaPunto,i)=>{
     puntol[i].addEventListener("click",()=>{
         let posicion = i;
