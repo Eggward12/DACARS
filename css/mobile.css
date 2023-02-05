@@ -1,0 +1,38 @@
+@media only screen and (max-width:700px){
+    body{
+        overflow: hidden;
+    }
+
+    @keyframes mostrarmenu {
+        from{opacity:0;}
+        to{opacity:1;}
+    }
+
+
+    header .toolbar .opc{
+        display: none;
+    }
+    header .toolbar .logo{
+        width: 90%;
+    }
+    header .toolbar .toggle{
+        display:block;
+    }
+    .responsivemenu.activado{
+        display: block;
+        animation: mostrarmenu 350ms ease-in both;
+    }
+}
+
+/* @media only screen and (min-width:700px) {
+    header .toolbar .opc{
+        display: none;
+    }
+    header .toolbar .toggle{
+        display:none;
+    }
+    .barras{
+        font-size: 24px;
+        top: 20%;
+    }
+} */
