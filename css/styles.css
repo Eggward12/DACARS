@@ -123,6 +123,10 @@ border-radius: 20px;
     animation: 2s infinite alternate colores;
 }
 
+footer{
+    background-color:rgb(179, 42, 42);
+}
+
 
 /* ---------------------animaciones-------------- */
 

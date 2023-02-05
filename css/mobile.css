@@ -23,6 +23,11 @@
         animation: mostrarmenu 350ms ease-in both;
     }
 
+    .carrusel{
+        width: 80%;
+        margin-left: 10%;
+    }
+
     .user{
         right: 6.5%;
         bottom: 14%;
