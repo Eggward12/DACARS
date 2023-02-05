@@ -22,6 +22,14 @@
         display: block;
         animation: mostrarmenu 350ms ease-in both;
     }
+
+    .user{
+        right: 6.5%;
+        bottom: 14%;
+    }
+    .wpp{
+        right:2%;
+    }
 }
 
 /* @media only screen and (min-width:700px) {
