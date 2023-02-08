@@ -100,8 +100,8 @@ header .toolbar .toggle{
     
 }
 .carrusel .punto{
-    width: 1em;
-    height: 1em;
+    width: 2em;
+    height: 2em;
     background: #F0F0F3;
     box-shadow: -1px -1px 3px #ffffff, 4.5px 6.5px 3px rgb(0 0 0 / 40%);
 border-radius: 20px;
@@ -125,6 +125,7 @@ border-radius: 20px;
 
 footer{
     background-color:rgb(179, 42, 42);
+    padding: 2% 2%;
 }
 
 

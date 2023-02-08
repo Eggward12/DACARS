@@ -20,6 +20,11 @@
 </head>
 
 <body>
+    <?php
+    include("abrir_conexion.php");
+        $datos = $conn->query("SELECT * FROM productos WHERE categoria='hombres' ORDER BY id DESC LIMIT 3");
+
+    ?>
     <header>
         <div class="container-fluid">
             <div class="row toolbar sticky-top">
@@ -32,7 +37,7 @@
                     <div class="col-1 mt-1 opc">
                         <a href="#" class="navbar-link">Hombre</a>
                     </div>
-                    <div class="col-1 mt-1 opc">
+                    <div class="col-1 mt-1 ms-3 opc">
                         <a href="#" class="navbar-link">Niños</a>
                     </div>
                     <div class="col-1 mt-1 opc">
@@ -61,8 +66,32 @@
             </ul>
         </div>
 
+        <div class="row hombres ms-3">
+            <!-- <?php
+            if ($datos->num_rows > 0) {
+                    while($row = $datos->fetch_assoc()){
+                        echo "<div class='col-3 seccion'>
+                                <img src='".$row["img"]."' class='imgprod'>           
+                                <h6 class='text-center'>".$row["nombre"]."</h6>
+                                <h6>".$row["precio"]."</h6>
+                                <input type='hidden' id='ide' value='".$row["id"]."'>
+                            </div>
+                        ";
+                    }
+                }
+            ?> -->
+        </div>
+
 
     </main>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                Footer
+            </div>
+        </div>
+    </footer>
 
     <!----------------------- menu responsive ------------------------------>
     <div class="container responsivemenu">
@@ -78,7 +107,6 @@
     <div class="user">
         <a href="#" class="text-dark"><i class="fa-regular fa-user"></i></a>
     </div>
-
 
     <!---------------------------- boton de wpp ------------------------------>
     <div class="wpp">

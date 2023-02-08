@@ -10,6 +10,28 @@ const puntol = document.querySelectorAll(".punto");
 
 puntol[0].classList.add("activo");
 
+var c = 0;
+
+setInterval(function(){
+        if (c>2) {
+            c=0;
+        }
+        puntol.forEach((puntos,i)=>{
+            puntol[i].classList.remove("activo");
+        })
+        puntol[c].classList.add("activo");
+        // console.log(c);
+        puntol.forEach((cadapunto,i) => {
+            puntol[i].addEventListener("click",()=>{
+                c=i;
+            })
+        });
+        // console.log(c);
+        grandel.style.transform = "translateX("+c*-33.3+"%)";
+        c++;
+},4000);
+
+
 puntol.forEach((cadaPunto,i)=>{
     puntol[i].addEventListener("click",()=>{
         let posicion = i;
@@ -17,9 +39,7 @@ puntol.forEach((cadaPunto,i)=>{
         puntol.forEach((puntos,i)=>{
             puntol[i].classList.remove("activo");//revisar
         })
-
-        // puntol[0].classList.remove("activo");
-
+        
         switch (posicion) {
             case 0:
                 grandel.style.transform = "translateX(0%)";
